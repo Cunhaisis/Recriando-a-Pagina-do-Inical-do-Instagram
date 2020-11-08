@@ -23,17 +23,19 @@ body {
     align-items: center;
     justify-content: start;
     width: 60%;
+    height: 100vh;
 }
 
 .instagram-phone {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 70%;
 }
 
 .instagram-phone img{
-    height: 50rem;
+  min-width: 360px;
+  max-width: 80%;
 
 }
 
@@ -48,19 +50,20 @@ body {
 
 .group {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: #fff;
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
+    border-radius: 2px;
 
 
 }
 
 .group:nth-child(1) {
-    min-height 3rem;
+    min-height: 3rem;
 }
 
 .intagram-log {
@@ -68,15 +71,22 @@ body {
 }
 
 .profile-photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
 }
+
+.profile-photo img {
+    height: 6rem;
+  }
+  
 
 .instagram-login {
     background-color: #0095f6;
     color: #ffffff;
-    padding: 8px;
+    padding: 5px 25px;
     border-radius: 4px;
 }
 
@@ -87,20 +97,24 @@ body {
 
 .not-account {
     color: rgb(160, 160, 160);
+    line-height: 1.5rem;
+
 }
 
 .link-blue {
-    color: #0095f6;
+  color: #0095f6;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 .get-the-app {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     padding: 1.3rem 0;
-}
+}   
 
 .download {
     display: flex;
@@ -117,11 +131,11 @@ body {
 }
 
 .app-download:nth-child(1) {
-    background-image: url('./img/apple-button.png');
+    background-image: url('./INSTAGRAM/img/apple_store.png');
 }
 
 .app-download:nth-child(2) {
-    background-image: url('./img/googleplay-button.png');
+    background-image: url('./INSTAGRAM/img/play_store.png');
 }
 
 /* media queries */
